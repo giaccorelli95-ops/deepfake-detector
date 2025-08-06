@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepFake Detector</title>
+    <!-- Rimuoviamo il CSP per ora per testare -->
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>DeepFake Detector</h1>
+        
+        <div class="upload-section">
+            <input type="file" id="fileInput" accept="image/*,video/*,audio/*" class="file-input">
+            <label for="fileInput" class="file-label">
+                Seleziona file (Immagine/Video/Audio)
+            </label>
+            <div id="fileName" class="file-name"></div>
+        </div>
+
+        <button id="analyzeBtn" class="analyze-btn" disabled>Analizza</button>
+
+        <div id="result" class="result-section">
+            <div id="loading" class="loading" style="display: none;">
+                <p>Analisi in corso...</p>
+                <p>L'upload di file grandi potrebbe richiedere alcuni minuti</p>
+            </div>
+            <div id="resultContent" class="result-content"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
