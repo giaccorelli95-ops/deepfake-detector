@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const loading = document.getElementById('loading');
     const resultContent = document.getElementById('resultContent');
 
-    const API_KEY = 'your-api-key'; // Sostituisci con la tua API key
+    const API_KEY = 'rd_c2844e6917327e83_f8f1fac356d5ef247c5ba0ecc194e809'; // Sostituisci con la tua API key
     const API_ENDPOINT = 'https://api.realitydefender.ai/v1/analyze';
 
     let selectedFile = null;
